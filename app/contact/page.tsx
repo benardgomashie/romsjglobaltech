@@ -76,7 +76,16 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-bg-blue py-32 md:py-40 pt-32 md:pt-40">
+      <section className="relative py-32 md:py-40 pt-32 md:pt-40">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/GhanaChinaFlagMerge.webp)' }}
+        />
+        
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-royal-blue/92 via-navy/90 to-royal-blue/88"></div>
+        
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             className="absolute bottom-0 left-0 w-96 h-96 bg-golden rounded-full mix-blend-multiply filter blur-3xl opacity-20"

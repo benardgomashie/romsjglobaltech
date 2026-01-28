@@ -93,7 +93,16 @@ export default function SponsorPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-bg-blue-yellow py-32 md:py-40 overflow-hidden pt-32 md:pt-40">
+      <section className="relative py-32 md:py-40 overflow-hidden pt-32 md:pt-40">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/GhanaAndChinaForeignMinistersShakeHands.jpg)' }}
+        />
+        
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-royal-blue/90 via-navy/88 to-golden/50"></div>
+        
         <div className="absolute inset-0">
           <motion.div
             className="absolute top-10 right-10 w-96 h-96 bg-golden rounded-full mix-blend-multiply filter blur-3xl opacity-30"
