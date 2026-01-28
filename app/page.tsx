@@ -115,8 +115,6 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-
-        
       </section>
 
       {/* About Quick Intro */}
