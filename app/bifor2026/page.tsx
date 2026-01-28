@@ -88,7 +88,7 @@ export default function BiFor2026Page() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-bg-blue-yellow py-32 md:py-48 overflow-hidden">
+      <section className="relative gradient-bg-blue-yellow py-32 md:py-48 overflow-hidden pt-32 md:pt-48">
         <div className="absolute inset-0">
           <motion.div
             className="absolute top-20 left-20 w-96 h-96 bg-golden rounded-full mix-blend-multiply filter blur-3xl opacity-30"

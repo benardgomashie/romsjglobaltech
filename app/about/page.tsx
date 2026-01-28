@@ -73,7 +73,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-bg-blue py-32 md:py-40">
+      <section className="relative gradient-bg-blue py-32 md:py-40 pt-32 md:pt-40">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             className="absolute top-0 right-0 w-96 h-96 bg-golden rounded-full mix-blend-multiply filter blur-3xl opacity-20"

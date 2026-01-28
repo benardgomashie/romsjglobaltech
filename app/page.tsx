@@ -30,9 +30,20 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Gradient */}
-        <div className="absolute inset-0 gradient-bg-blue-yellow opacity-95"></div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-royal-blue/80 via-royal-blue/75 via-royal-blue/70 to-golden/40"></div>
         
         {/* Animated Shapes */}
         <div className="absolute inset-0 overflow-hidden">
