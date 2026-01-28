@@ -62,8 +62,8 @@ export default function ContactPage() {
     {
       icon: <FaPhone />,
       title: 'Phone',
-      details: '+233 XXX XXX XXX',
-      link: 'tel:+233XXXXXXXXX',
+      details: '+233 24 274 7033 / +233 24 475 5191',
+      link: 'tel:+233242747033',
     },
     {
       icon: <FaMapMarkerAlt />,
@@ -178,7 +178,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-golden focus:outline-none transition-colors"
-                      placeholder="+233 XXX XXX XXX"
+                      placeholder="+233 24 274 7033"
                     />
                   </div>
                 </div>

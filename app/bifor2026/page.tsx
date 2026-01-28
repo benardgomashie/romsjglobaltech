@@ -157,14 +157,26 @@ export default function BiFor2026Page() {
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong className="text-royal-blue">BiFor 2026</strong> is a transformative business forum organized by 
-                <strong className="text-golden"> ROMSJ GLOBAL TECH</strong> and the 
-                <strong className="text-royal-blue"> GHANA EMBASSY IN CHINA</strong>.
+                <strong className="text-royal-blue">BiFor 2026</strong> is a High-Level China–Ghana Business Conference and Investment Exchange Program 
+                organized by <strong className="text-golden"> ROMSJ GLOBAL TECH</strong> in close collaboration with the 
+                <strong className="text-royal-blue"> Embassy of the Republic of Ghana in the People's Republic of China</strong>.
               </p>
               
               <p>
-                This eye-opening event is anchored on Ghana's <strong className="text-golden">BIG PUSH</strong> government policy, 
-                enabling economic stability, growth, and opportunities for SMEs, Startups, and Business Leaders/Investors.
+                This <strong>multi-provincial conference</strong> is designed to directly connect influential Chinese business leaders, 
+                investors, provincial authorities, and industrial players with their prospective Ghanaian partners, enterprises, and government stakeholders.
+              </p>
+              
+              <p>
+                The program focuses on <strong className="text-golden">five strategic sectors</strong> vital to Ghana's accelerated growth agenda: 
+                <strong> Technology, Agriculture, General Trade, Manufacturing, and Infrastructure</strong>. Activities relating to each sector 
+                will take place in the Chinese provinces where those industries are most prominent, providing participants with on-site learning, 
+                sector-specific exposure, and concrete investment exploration opportunities.
+              </p>
+              
+              <p>
+                This eye-opening event is anchored on Ghana's <strong className="text-golden">BIG PUSH Integrated Infrastructure and Road Construction Initiative</strong> 
+                and the <strong>24-Hour Economy Policy</strong>, positioning Ghana as a competitive, ready, and attractive investment destination.
               </p>
               
               <p>
@@ -323,6 +335,51 @@ export default function BiFor2026Page() {
                 ))}
               </ul>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="section-padding bg-white">
+        <div className="container-width">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-royal-blue mb-4">
+              Partners for BiFor 2026
+            </h2>
+            <div className="w-24 h-1 bg-golden mx-auto mb-6"></div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Supported by leading governmental, financial, and private sector organizations
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              { name: 'KGL Group', type: 'Private' },
+              { name: 'CDC', type: 'Private' },
+              { name: 'GCB', type: 'Financial' },
+              { name: 'Stanbic Bank', type: 'Financial' },
+              { name: 'Agricultural Development Bank (ADB)', type: 'Financial' },
+              { name: 'Ghana Investment Promotion Centre (GIPC)', type: 'Governmental' },
+              { name: 'Diaspora Affairs (Office of the President)', type: 'Governmental' },
+              { name: 'Ministry of Trade and Agri-business', type: 'Governmental' },
+            ].map((partner, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-br from-royal-blue to-navy text-white p-6 rounded-lg text-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <p className="font-bold text-sm md:text-base mb-2">{partner.name}</p>
+                <span className="text-xs text-golden">{partner.type}</span>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

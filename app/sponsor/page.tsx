@@ -45,55 +45,37 @@ export default function SponsorPage() {
 
   const sponsorshipTiers = [
     {
-      name: 'Platinum Sponsor',
+      name: 'Title / Presenting Sponsor',
       icon: <FaCrown />,
-      color: 'from-gray-300 to-gray-400',
-      textColor: 'text-gray-800',
-      price: 'Premium Package',
-      benefits: [
-        'Prime logo placement on all event materials',
-        'Speaking opportunity at the main event',
-        'VIP access to all networking sessions',
-        'Meet high-profile personalities and influencers',
-        'Exclusive introductions throughout the event',
-        'Prominent brand visibility in event venue',
-        'Opportunity to speak about your company and services',
-        'Premium exhibition booth space',
-        'Featured in all press releases and media coverage',
-        'Dedicated social media promotion',
-      ],
-    },
-    {
-      name: 'Presenting Sponsor',
-      icon: <FaTrophy />,
       color: 'from-golden to-mustard',
       textColor: 'text-white',
-      price: 'Executive Package',
+      price: 'GHC 800,000 / $75,000',
       benefits: [
-        'Major logo placement on event materials',
-        'Networking opportunities with key stakeholders',
-        'Introduction during event sessions',
-        'Access to VIP networking areas',
-        'Exhibition booth space',
-        'Featured in event communications',
-        'Social media mentions and promotion',
-        'Certificate of partnership',
+        'Meet all highly influential personalities',
+        'One-on-one meetings with Chinese government officials',
+        'Full 2-page spread for well-wishing and corporate message with product display',
+        '8 VIP Tickets',
+        'Full pages for adverts in the brochure',
+        'Logo embossed on all event prints and on the back page of brochure',
+        'Multiple pull-ups for display',
+        'T-shirt branded with sponsor logo',
       ],
     },
     {
-      name: 'Gold Sponsor',
+      name: 'Platinum Sponsor',
       icon: <FaStar />,
-      color: 'from-yellow-500 to-yellow-600',
-      textColor: 'text-white',
-      price: 'Business Package',
+      color: 'from-gray-300 to-gray-400',
+      textColor: 'text-gray-800',
+      price: 'GHC 600,000 / $55,000',
       benefits: [
-        'Logo placement on event materials',
-        'Access to networking sessions',
-        'Exhibition space availability',
-        'Listed on event website and materials',
-        'Social media recognition',
-        'Networking opportunities',
-        'Certificate of sponsorship',
+        'Meet all highly influential personalities',
+        'One-on-one meetings with Chinese government officials',
+        'Full 1-page for well-wishing message with product display',
+        '6 VIP Tickets',
+        'Full pages for adverts in the brochure',
+        'Logo embossed on all event prints and on the back page of brochure',
+        'Pull-up for display',
+        'T-shirt branded with sponsor logo',
       ],
     },
   ]
@@ -208,7 +190,7 @@ export default function SponsorPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {sponsorshipTiers.map((tier, index) => (
               <motion.div
                 key={index}

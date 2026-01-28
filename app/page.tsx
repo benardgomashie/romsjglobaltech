@@ -284,6 +284,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section className="section-padding bg-white">
+        <div className="container-width">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-royal-blue mb-4">
+              Our Partners
+            </h2>
+            <div className="w-24 h-1 bg-golden mx-auto mb-6"></div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              In collaboration with leading organizations supporting BiFor 2026
+            </p>
+          </div>
+
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            {[
+              'KGL Group',
+              'CDC',
+              'GCB',
+              'Stanbic Bank',
+              'Agricultural Development Bank (ADB)',
+              'Ghana Investment Promotion Centre (GIPC)',
+              'Diaspora Affairs (Office of the President)',
+              'Ministry of Trade and Agri-business'
+            ].map((partner, index) => (
+              <motion.div
+                key={index}
+                className="bg-gradient-to-br from-royal-blue to-navy text-white p-6 rounded-lg text-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <p className="font-semibold text-sm md:text-base">{partner}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-golden">
         <div className="container-width text-center">

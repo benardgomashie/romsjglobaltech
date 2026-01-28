@@ -87,7 +87,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start text-sm">
                 <FaPhone className="text-golden mt-1 mr-3 flex-shrink-0" />
-                <span className="text-gray-300">+233 XXX XXX XXX</span>
+                <div className="text-gray-300">
+                  <div>+233 24 274 7033</div>
+                  <div>+233 24 475 5191</div>
+                </div>
               </li>
               <li className="flex items-start text-sm">
                 <FaMapMarkerAlt className="text-golden mt-1 mr-3 flex-shrink-0" />
