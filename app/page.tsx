@@ -15,8 +15,8 @@ export default function Home() {
   ]
 
   const stats = [
-    { number: '1000+', label: 'Business Connections' },
-    { number: '50+', label: 'Industry Sectors' },
+    { number: '5', label: 'Strategic Sectors' },
+    { number: '8+', label: 'Partner Organizations' },
     { number: '2026', label: 'BiFor Event Year' },
     { number: '2', label: 'Nations United' },
   ]
