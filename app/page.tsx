@@ -185,7 +185,7 @@ export default function Home() {
             >
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
                 BiFor 2026
-                <span className="block text-golden mt-2">佰赋 BiFor 2026</span>
+                <span className="block text-golden mt-2">比福尔 BiFor 2026</span>
               </h2>
               <p className="text-xl text-gray-100 mb-6">
                 A transformative business forum connecting high-level Chinese investors with Ghanaian stakeholders across strategic development sectors.

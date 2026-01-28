@@ -123,7 +123,7 @@ export default function SponsorPage() {
               Elevate Your Brand on the Global Stage at BiFor 2026
             </p>
             <p className="text-lg md:text-xl mt-4 text-golden font-semibold">
-              佰赋 BiFor 2026 - Be A Sponsor
+              比福尔 BiFor 2026 - Be A Sponsor
             </p>
           </motion.div>
         </div>
@@ -248,7 +248,7 @@ export default function SponsorPage() {
                 Investment Benefits
               </h2>
               <p className="text-xl text-gray-100 mb-6">
-                Investment in 佰赋 BiFor 2026 'BIG PUSH' will generate general benefits for sponsors and partners.
+                Investment in 比福尔 BiFor 2026 'BIG PUSH' will generate general benefits for sponsors and partners.
               </p>
               <p className="text-lg text-gray-200 mb-6">
                 Proud sponsors and partners in <strong className="text-golden">Presenting or Platinum</strong> tiers 

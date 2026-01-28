@@ -125,7 +125,7 @@ export default function BiFor2026Page() {
               BiFor 2026
             </h1>
             <p className="text-4xl md:text-5xl text-golden mb-8 font-accent">
-              佰赋 BiFor 2026
+              比福尔 BiFor 2026
             </p>
             <div className="w-32 h-1 bg-golden mx-auto mb-8"></div>
             <p className="text-2xl md:text-3xl max-w-4xl mx-auto text-gray-100 leading-relaxed">
