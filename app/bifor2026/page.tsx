@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaUsers, FaEye, FaTrophy, FaLightbulb, FaHandshake, FaStar, FaChartLine, FaGlobe, FaAward, FaRocket, FaIndustry, FaBuilding } from 'react-icons/fa'
 
 export default function BiFor2026Page() {
@@ -368,25 +369,31 @@ export default function BiFor2026Page() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { name: 'KGL Group', type: 'Private' },
-              { name: 'CDC', type: 'Private' },
-              { name: 'GCB', type: 'Financial' },
-              { name: 'Stanbic Bank', type: 'Financial' },
-              { name: 'Agricultural Development Bank (ADB)', type: 'Financial' },
-              { name: 'Ghana Investment Promotion Centre (GIPC)', type: 'Governmental' },
-              { name: 'Diaspora Affairs (Office of the President)', type: 'Governmental' },
-              { name: 'Ministry of Trade and Agri-business', type: 'Governmental' },
+              { name: 'KGL Group', type: 'Private', logo: '/images/partners/KGIlogo.jpeg' },
+              { name: 'GCB', type: 'Financial', logo: '/images/partners/GCBlogo.jpeg' },
+              { name: 'Stanbic Bank', type: 'Financial', logo: '/images/partners/StanbicBankLogo.jpeg' },
+              { name: 'Agricultural Development Bank', type: 'Financial', logo: '/images/partners/ADBlogo.jpeg' },
+              { name: 'Ghana Investment Promotion Centre', type: 'Governmental', logo: '/images/partners/GIPClogo.jpeg' },
+              { name: 'Diaspora Affairs', type: 'Governmental', logo: '/images/partners/diasporaAffairsLogo.jpeg' },
+              { name: 'Ministry of Trade and Agri-business', type: 'Governmental', logo: '/images/partners/MinistryOfTradeLogo.jpeg' },
             ].map((partner, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-royal-blue to-navy text-white p-6 rounded-lg text-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                className="bg-white p-6 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <p className="font-bold text-sm md:text-base mb-2">{partner.name}</p>
-                <span className="text-xs text-golden">{partner.type}</span>
+                <div className="relative w-full h-20 mb-3">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-xs text-royal-blue font-semibold block text-center">{partner.type}</span>
               </motion.div>
             ))}
           </div>

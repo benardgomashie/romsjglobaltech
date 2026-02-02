@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { FaRocket, FaSeedling, FaUsers, FaHospital, FaIndustry, FaChartLine, FaArrowRight, FaHandshake, FaGlobe, FaStar } from 'react-icons/fa'
 
@@ -293,24 +294,30 @@ export default function Home() {
             viewport={{ once: true }}
           >
             {[
-              'KGL Group',
-              'CDC',
-              'GCB',
-              'Stanbic Bank',
-              'Agricultural Development Bank (ADB)',
-              'Ghana Investment Promotion Centre (GIPC)',
-              'Diaspora Affairs (Office of the President)',
-              'Ministry of Trade and Agri-business'
+              { name: 'KGL Group', logo: '/images/partners/KGIlogo.jpeg' },
+              { name: 'GCB', logo: '/images/partners/GCBlogo.jpeg' },
+              { name: 'Stanbic Bank', logo: '/images/partners/StanbicBankLogo.jpeg' },
+              { name: 'Agricultural Development Bank', logo: '/images/partners/ADBlogo.jpeg' },
+              { name: 'Ghana Investment Promotion Centre', logo: '/images/partners/GIPClogo.jpeg' },
+              { name: 'Diaspora Affairs', logo: '/images/partners/diasporaAffairsLogo.jpeg' },
+              { name: 'Ministry of Trade and Agri-business', logo: '/images/partners/MinistryOfTradeLogo.jpeg' }
             ].map((partner, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-royal-blue to-navy text-white p-6 rounded-lg text-center hover:scale-105 transition-transform duration-300 shadow-lg"
+                className="bg-white p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <p className="font-semibold text-sm md:text-base">{partner}</p>
+                <div className="relative w-full h-20">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </motion.div>
             ))}
           </motion.div>
