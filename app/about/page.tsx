@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { FaRocket, FaLightbulb, FaHandshake, FaLeaf, FaLaptopCode, FaBalanceScale } from 'react-icons/fa'
 
 export default function AboutPage() {
@@ -259,6 +260,77 @@ export default function AboutPage() {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Leadership & Government Relations Section */}
+      <section className="section-padding bg-white">
+        <div className="container-width">
+          <div className="text-center mb-12">
+            <motion.h2
+              className="text-4xl md:text-5xl font-display font-bold text-royal-blue mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              Leadership & Government Relations
+            </motion.h2>
+            <div className="w-24 h-1 bg-golden mx-auto mb-6"></div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our chairman's strategic relationships with Ghana's top government officials underscore our commitment to national development
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div
+              className="bg-gray-50 rounded-2xl overflow-hidden shadow-xl group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Image
+                  src="/images/RomsjChairmanWithPresidentofGhana.jpeg"
+                  alt="ROMSJ Chairman with President of Ghana"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-royal-blue mb-2">
+                  Presidential Engagement
+                </h3>
+                <p className="text-gray-600">
+                  ROMSJ Chairman meeting with the President of Ghana, demonstrating our organization's commitment to national economic development and strategic government partnerships.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="bg-gray-50 rounded-2xl overflow-hidden shadow-xl group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Image
+                  src="/images/romsjChairmanWithFormervicePresident.jpeg"
+                  alt="ROMSJ Chairman with Former Vice President"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-royal-blue mb-2">
+                  High-Level Collaboration
+                </h3>
+                <p className="text-gray-600">
+                  Strategic dialogue with Ghana's former Vice President, reinforcing our role in facilitating high-level business and government collaboration for mutual growth.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
