@@ -378,24 +378,25 @@ export default function BiFor2026Page() {
               { name: 'Diaspora Affairs', type: 'Governmental', logo: '/images/partners/diasporaAffairsLogo.jpeg' },
               { name: 'Ministry of Trade and Agri-business', type: 'Governmental', logo: '/images/partners/MinistryOfTradeLogo.jpeg' },
             ].map((partner, index) => (
-              <motion.div
-                key={index}
-                className="bg-white p-6 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="relative w-full h-20 mb-3">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <span className="text-xs text-royal-blue font-semibold block text-center">{partner.type}</span>
-              </motion.div>
+              <Link key={index} href="/partners">
+                <motion.div
+                  className="bg-white p-6 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100 cursor-pointer"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <div className="relative w-full h-20 mb-3">
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-600 text-center">{partner.type}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-12">

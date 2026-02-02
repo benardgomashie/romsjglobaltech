@@ -303,23 +303,24 @@ export default function Home() {
               { name: 'Diaspora Affairs', logo: '/images/partners/diasporaAffairsLogo.jpeg' },
               { name: 'Ministry of Trade and Agri-business', logo: '/images/partners/MinistryOfTradeLogo.jpeg' }
             ].map((partner, index) => (
-              <motion.div
-                key={index}
-                className="bg-white p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="relative w-full h-20">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </motion.div>
+              <Link key={index} href="/partners">
+                <motion.div
+                  className="bg-white p-6 rounded-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-gray-100 cursor-pointer"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <div className="relative w-full h-20">
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </motion.div>
 
