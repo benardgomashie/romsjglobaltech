@@ -370,6 +370,7 @@ export default function BiFor2026Page() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
               { name: 'KGL Group', type: 'Private', logo: '/images/partners/KGIlogo.jpeg' },
+              { name: 'CDC', type: 'Private', logo: '/images/partners/CDClogo.png' },
               { name: 'GCB', type: 'Financial', logo: '/images/partners/GCBlogo.jpeg' },
               { name: 'Stanbic Bank', type: 'Financial', logo: '/images/partners/StanbicBankLogo.jpeg' },
               { name: 'Agricultural Development Bank', type: 'Financial', logo: '/images/partners/ADBlogo.jpeg' },

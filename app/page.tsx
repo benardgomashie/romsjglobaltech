@@ -295,6 +295,7 @@ export default function Home() {
           >
             {[
               { name: 'KGL Group', logo: '/images/partners/KGIlogo.jpeg' },
+              { name: 'CDC', logo: '/images/partners/CDClogo.png' },
               { name: 'GCB', logo: '/images/partners/GCBlogo.jpeg' },
               { name: 'Stanbic Bank', logo: '/images/partners/StanbicBankLogo.jpeg' },
               { name: 'Agricultural Development Bank', logo: '/images/partners/ADBlogo.jpeg' },
