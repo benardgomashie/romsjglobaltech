@@ -164,7 +164,7 @@ export default function BiFor2026Page() {
             </h2>
             <div className="w-24 h-1 bg-golden mx-auto mb-12"></div>
             
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed text-justify">
               <p>
                 <strong className="text-royal-blue">BiFor 2026</strong> is a High-Level China–Ghana Business Conference and Investment Exchange Program 
                 organized by <strong className="text-golden"> ROMSJ GLOBAL TECH</strong> in close collaboration with the 
@@ -195,7 +195,7 @@ export default function BiFor2026Page() {
               
               <div className="bg-gradient-to-r from-royal-blue to-navy p-8 rounded-xl text-white my-8">
                 <h3 className="text-2xl font-bold text-golden mb-4">About AfCFTA</h3>
-                <p>
+                <p className="text-justify">
                   The African Continental Free Trade Area (AfCFTA) is one of the Flagship Projects of Agenda 2063—Africa's development framework. 
                   The AfCFTA aims at accelerating intra-African trade and boosting Africa's trading position in the global market 
                   by strengthening Africa's common voice and policy space in global trade negotiations.
