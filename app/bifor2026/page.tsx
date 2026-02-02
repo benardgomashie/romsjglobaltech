@@ -398,7 +398,11 @@ export default function BiFor2026Page() {
               </motion.div>
             ))}
           </div>
-        </div>
+          <div className="text-center mt-12">
+            <Link href="/partners" className="btn-primary">
+              Learn More About Our Partners
+            </Link>
+          </div>        </div>
       </section>
 
       {/* CTA Section */}

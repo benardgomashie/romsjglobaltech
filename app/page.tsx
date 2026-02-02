@@ -322,6 +322,12 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
+
+          <div className="text-center mt-12">
+            <Link href="/partners" className="btn-primary">
+              Learn More About Our Partners
+            </Link>
+          </div>
         </div>
       </section>
 

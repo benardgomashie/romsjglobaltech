@@ -23,6 +23,7 @@ export default function Header() {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'BiFor 2026', path: '/bifor2026' },
+    { name: 'Partners', path: '/partners' },
     { name: 'Become a Sponsor', path: '/sponsor' },
     { name: 'Contact', path: '/contact' },
   ]
