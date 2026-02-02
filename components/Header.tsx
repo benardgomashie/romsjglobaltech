@@ -39,14 +39,10 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-3">
           <div className="relative w-12 h-12 md:w-16 md:h-16">
             <Image
-              src="/images/logo.png"
+              src="/images/romsj-logo.png"
               alt="ROMSJ Global Tech"
               fill
               className="object-contain"
-              onError={(e) => {
-                // Fallback if logo not found
-                e.currentTarget.style.display = 'none'
-              }}
             />
           </div>
           <div className="flex flex-col">
