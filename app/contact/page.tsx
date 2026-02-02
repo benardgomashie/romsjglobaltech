@@ -84,7 +84,7 @@ export default function ContactPage() {
         />
         
         {/* Dark Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-royal-blue/92 via-navy/90 to-royal-blue/88"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-royal-blue/95 via-navy/93 to-royal-blue/95"></div>
         
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
