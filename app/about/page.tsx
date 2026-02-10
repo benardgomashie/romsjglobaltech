@@ -8,18 +8,18 @@ export default function AboutPage() {
   const missionPoints = [
     {
       icon: <FaLaptopCode />,
-      title: 'Technological Solutions',
-      description: 'Focus on providing technological needs to achieve critical goals for both profit and non-profit business operations in Ghana.',
+      title: 'Investment Advisory',
+      description: 'Helping individuals and businesses make informed financial decisions through expert guidance and technology-driven solutions.',
     },
     {
-      icon: <FaLeaf />,
-      title: 'Agricultural Innovation',
-      description: 'Enhancing agricultural productivity by focusing on integrated farming, soil health management and resource conservation.',
+      icon: <FaHandshake />,
+      title: 'Global Trade Facilitation',
+      description: 'Enabling the exchange of goods, services, and financial assets across local and global markets with the use of cutting-edge technology.',
     },
     {
       icon: <FaRocket />,
-      title: 'SME Empowerment',
-      description: 'To inspire startups and SMEs through the needed training and assistance to attain higher levels in their field.',
+      title: 'Entrepreneurship & Value Creation',
+      description: 'Promoting business cooperation by identifying opportunities and creating value through starting and growing businesses between China and Africa.',
     },
   ]
 
@@ -109,7 +109,10 @@ export default function AboutPage() {
               About <span className="text-golden">ROMSJ Global Tech</span>
             </h1>
             <div className="w-32 h-1 bg-golden mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-100">
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-100 leading-relaxed">
+              An investment advisory company helping individuals and businesses make informed financial decisions through technology-driven solutions for global trade and China-Africa business cooperation
+            </p>
+            <p className="text-lg mt-4 max-w-2xl mx-auto text-gray-200">
               In collaboration with the Embassy of the Republic of Ghana in the People's Republic of China
             </p>
           </motion.div>

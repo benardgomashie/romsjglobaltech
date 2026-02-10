@@ -132,8 +132,9 @@ export default function Home() {
             </motion.h2>
             <div className="w-24 h-1 bg-golden mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              ROMSJ Global Tech, in collaboration with the Embassy of the Republic of Ghana in the People's Republic of China, 
-              is dedicated to providing technological needs and enhancing productivity across key sectors.
+              ROMSJ Global Tech is an investment advisory company helping individuals and businesses make informed financial decisions. 
+              We facilitate the exchange of goods, services, and financial assets across local and global markets using technology, 
+              while promoting business cooperation between China and Africa.
             </p>
           </div>
 
