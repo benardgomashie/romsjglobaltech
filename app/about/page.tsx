@@ -296,7 +296,8 @@ export default function AboutPage() {
                   src="/images/RomsjChairmanWithPresidentofGhana.jpeg"
                   alt="ROMSJ Chairman with President of Ghana"
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: 'center 30%' }}
                 />
               </div>
               <div className="p-6">
@@ -321,7 +322,8 @@ export default function AboutPage() {
                   src="/images/romsjChairmanWithFormervicePresident.jpeg"
                   alt="ROMSJ Chairman with Former Vice President"
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: 'center 30%' }}
                 />
               </div>
               <div className="p-6">
